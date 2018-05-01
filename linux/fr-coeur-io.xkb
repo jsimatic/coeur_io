@@ -1,0 +1,84 @@
+xkb_keymap        {
+
+xkb_keycodes      { include "xfree86+aliases(azerty)" };
+
+xkb_types         { include "complete" };
+
+xkb_compatibility { include "complete" };
+
+partial alphanumeric_keys
+xkb_symbols "coeur_io" {
+
+    name[Group1]= "France - Coeur 2.0 (programmer variant)";
+
+    include "pc(pc105)"
+    
+    key <TLDE> { type[group1] = "FOUR_LEVEL",                [    twosuperior, heart,         infinity,                U266B ] }; // ² ♥ TBD ♫
+    key <AE01> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [         endash, 1,               emdash,   doublelowquotemark ] }; // – 1 — „
+    key <AE02> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [  guillemotleft, 2,  leftsinglequotemark,  leftdoublequotemark ] }; // « 2 ‘ “
+    key <AE03> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ guillemotright, 3, rightsinglequotemark, rightdoublequotemark ] }; // » 3 ’ ”
+    key <AE04> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [           less, 4,             infinity,        lessthanequal ] }; // < 4 TBD ≤
+    key <AE05> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [        greater, 5,             infinity,     greaterthanequal ] }; // > 5 TBD ≥    
+    
+    key <AE06> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [       at, 6,        ae,            AE ] }; // @ 6 æ Æ
+    key <AE07> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [     plus, 7, plusminus,       notsign ] }; // + 7 ± ¬
+    key <AE08> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [    minus, 8,     U2212,    onequarter ] }; // - 8 − ¼
+    key <AE09> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [    slash, 9,  division,       onehalf ] }; // / 9 ÷ ½
+    key <AE10> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ asterisk, 0,  multiply, threequarters ] }; // * 0 × ¾
+    key <AE11> { type[group1] = "FOUR_LEVEL",             [ equal, percent,  notequal,         U2030 ] }; // = % ≠ ‰
+    //key <AE12>
+    
+    key <AD01> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ eacute, Eacute, dead_acute, dead_doubleacute ] }; // é É ´ ˝
+    key <AD02> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      w,      W, numbersign,        paragraph ] }; // w W # ¶
+    key <AD03> { type[group1] = "FOUR_LEVEL_ALPHABETIC",     [      o,      O,         oe,               OE ] }; // o O œ Œ
+    key <AD04> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      p,      P,  ampersand,          section ] }; // p P & §
+    key <AD05> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      y,      Y,      U2713,            U2611 ] }; // y Y ✓ ☑
+    
+    key <AD06> { type[group1] = "THREE_LEVEL",               [          b,        B,          bar,   brokenbar ] }; // b B | ¦
+    key <AD07> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ apostrophe, question,     quotedbl, questiondown] }; // ' ? " ¿
+    key <AD08> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [          d,        D,  bracketleft,      degree ] }; // d D [ °
+    key <AD09> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [          l,        L, bracketright,     minutes ] }; // l L ] ′
+    key <AD10> { type[group1] = "FOUR_LEVEL_ALPHABETIC",     [          j,        J,     asterisk,     seconds ] }; // j J * ″
+    key <AD11> { type[group1] = "FOUR_LEVEL_ALPHABETIC",     [          z,        Z,        schwa,       SCHWA ] }; // z Z ə Ə
+    
+    key <AD12> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [  ccedilla,  Ccedilla, dead_cedilla,       UFDD3 ] }; // ç Ç ¸ ,
+    
+    
+    key <CAPS> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ x, X,          UFDDE,         UFDD1 ] }; // a A exp ind
+    key <AC01> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ a, A,             at,            at ] }; // a A @ TBD
+    key <AC02> { type[group1] = "FOUR_LEVEL_ALPHABETIC",     [ u, U,         ugrave,        Ugrave ] }; // u U ù Ù
+    key <AC03> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ e, E,       EuroSign,         UFDD1 ] }; // e E € ¤
+    key <AC04> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ i, I, dead_diaeresis, dead_abovedot ] }; // i I ¨ ˙
+    key <AC05> { type[group1] = "FOUR_LEVEL",    [ comma, semicolon,      infinity ,      infinity ] }; // , ; TBD TBD
+    
+    key <AC06> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ c, C,  ccedilla,      Ccedilla ] }; // c C ç Ç
+    key <AC07> { type[group1] = "FOUR_LEVEL_ALPHABETIC",     [ t, T, braceleft,             4 ] }; // t T { 4
+    key <AC08> { type[group1] = "FOUR_LEVEL_ALPHABETIC",     [ s, S, parenleft,             5 ] }; // s S ( 5
+    key <AC09> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ r, R, parenright,            6 ] }; // r R ) 6
+    key <AC10> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ n, N, braceright,         plus ] }; // n N } +
+    key <AC11> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ h, H,     dagger, doubledagger ] }; // h H † ‡
+    
+    //key <BKSL> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ w, W, dead_breve ] }; // w W ˘
+    
+    key <LSGT> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ ecircumflex, Ecircumflex, dead_circumflex,    asciicircum ] }; // ê Ê ^ ^
+    key <AB01> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [       minus,      exclam,        infinity,     exclamdown ] }; // - TDB ! ¡
+    key <AB02> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      agrave,      Agrave,          dollar,       infinity ] }; // à À $ TBD
+    key <AB03> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      egrave,      Egrave,      dead_grave,          grave ] }; // è È ` `
+    key <AB04> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      period,       colon,        ellipsis, periodcentered ] }; // . : … ·
+    key <AB05> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [           k,           K,           U2717,          U2610 ] }; // k K ✗ ☐
+    
+    key <AB06> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ g, G,          mu,  dead_greek ] }; // g G µ µ
+    key <AB07> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ m, M,  asciitilde,  dead_tilde ] }; // g G ~ ~
+    key <AB08> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ f, F,       slash, dead_stroke ] }; // f F / /
+    key <AB09> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ q, Q,   backslash, dead_macron ] }; // q Q \ ̄
+    key <AB10> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ v, V, asciicircum,  dead_caron ] }; // v V ^ ˇ
+        
+    key <SPCE> { [           space, underscore, nobreakspace,          U202F ] }; // ␣ _ (espace insécable) (espace insécable fin)
+
+    include "level3(ralt_switch)"
+    
+};
+
+xkb_geometry { include "pc(pc105)" };
+
+};
