@@ -1,6 +1,6 @@
 xkb_keymap        {
 
-xkb_keycodes      { include "xfree86+aliases(azerty)" };
+xkb_keycodes      { include "evdev+aliases(azerty)" };
 
 xkb_types         { include "complete" };
 
@@ -12,7 +12,8 @@ xkb_symbols "coeur_io" {
     name[Group1]= "France - Coeur 2.0 (programmer variant)";
 
     include "pc(pc105)"
-    
+    include "keypad(oss)"
+
     key <TLDE> { type[group1] = "FOUR_LEVEL",                [    twosuperior, heart,         infinity,                U266B ] }; // ² ♥ TBD ♫
     key <AE01> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [         endash, 1,               emdash,   doublelowquotemark ] }; // – 1 — „
     key <AE02> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [  guillemotleft, 2,  leftsinglequotemark,  leftdoublequotemark ] }; // « 2 ‘ “
@@ -34,7 +35,7 @@ xkb_symbols "coeur_io" {
     key <AD04> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      p,      P,  ampersand,          section ] }; // p P & §
     key <AD05> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      y,      Y,      U2713,            U2611 ] }; // y Y ✓ ☑
     
-    key <AD06> { type[group1] = "THREE_LEVEL",               [          b,        B,          bar,   brokenbar ] }; // b B | ¦
+    key <AD06> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [          b,        B,          bar,   brokenbar ] }; // b B | ¦
     key <AD07> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ apostrophe, question,     quotedbl, questiondown] }; // ' ? " ¿
     key <AD08> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [          d,        D,  bracketleft,      degree ] }; // d D [ °
     key <AD09> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [          l,        L, bracketright,     minutes ] }; // l L ] ′

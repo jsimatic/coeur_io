@@ -10,7 +10,7 @@ la disposition (original vide pour le [keyboard.io Model
 01](https://community.keyboard.io/) 
 [ici](http://www.keyboard-layout-editor.com/#/gists/db6d73c1cadcd6895bd27486e924ae14))
 
-## Inpirations
+## Inspirations
 
 - Placement des lettres d'après la disposition [Cœur
     2.0](https://hal.archives-ouvertes.fr/hal-01558613/ "Kouroch Bellis.
