@@ -134,7 +134,7 @@ KEYMAPS(
   (Key_Tab,       Key_1, Key_2, Key_3, Key_4, Key_5, Key_LEDEffectNext,
    Key_Backtick,  Key_Q, Key_W, Key_E, Key_R, Key_T, LockLayer(QWERTY),
    Key_CapsLock,  Key_A, Key_S, Key_D, Key_F, Key_G,
-   Key_Backslash, Key_Z, Key_X, Key_C, Key_V, Key_B, Key_LeftControl,
+   Key_NonUsBackslashAndPipe, Key_Z, Key_X, Key_C, Key_V, Key_B, Key_LeftControl,
    Key_LeftAlt, Key_LeftShift, Key_LeftGui, Key_Backspace,
    ShiftToLayer(FUNCTION),
 
