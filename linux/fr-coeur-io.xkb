@@ -58,6 +58,7 @@ xkb_symbols "coeur_io" {
     key <AC09> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ r, R, parenright,            6 ] }; // r R ) 6
     key <AC10> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ n, N, braceright,         plus ] }; // n N } +
     key <AC11> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ h, H,     dagger, doubledagger ] }; // h H † ‡
+    key <AC12> { type[group1] = "ONE_LEVEL", [ Control_R ] }; //
     
     //key <BKSL> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ w, W, dead_breve ] }; // w W ˘
     
