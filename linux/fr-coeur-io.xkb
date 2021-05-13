@@ -1,6 +1,12 @@
 xkb_keymap        {
 
-xkb_keycodes      { include "evdev+aliases(azerty)" };
+xkb_keycodes      {
+    include "evdev+aliases(azerty)"
+    <I139> = 139;
+    <I141> = 141;
+    <I143> = 143;
+    <I145> = 145;
+};
 
 xkb_types         { include "complete" };
 
@@ -76,6 +82,11 @@ xkb_symbols "coeur_io" {
     key <AB10> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ v, V, asciicircum,  dead_caron ] }; // v V ^ ˇ
         
     key <SPCE> { [           space, underscore, nobreakspace,          U202F ] }; // ␣ _ (espace insécable) (espace insécable fin)
+    key <I139> { type[group1] = "ONE_LEVEL", [ Undo ] };
+    key <I141> { type[group1] = "ONE_LEVEL", [ XF86Copy ] };
+    key <I143> { type[group1] = "ONE_LEVEL", [ XF86Paste ] };
+    key <I145> { type[group1] = "ONE_LEVEL", [ XF86Cut ] };
+
 
     include "level3(ralt_switch)"
     
